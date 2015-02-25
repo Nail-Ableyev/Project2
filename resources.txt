@@ -1,0 +1,4 @@
+1. http://www.w3schools.com  for JavaScript references 
+2. StackOveflow for a bunch of stupid questions
+3. http://semu.github.io/timesheet.js I used it in my resume.
+4. Udacity Discussion Forum 
