@@ -29,7 +29,7 @@ var bio = {
 		var formattedLoc = HTMLlocation.replace("%data%", bio.contacts.location);
 		$("#header").append(formattedPic, formattedMessage);
 		$("#header").append(HTMLskillsStart);
-		for (var i in bio.skills){
+		for (var i=0; i<bio.skills.length; i++){
 			var formattedSkill = HTMLskills.replace("%data%", bio.skills[i]);
 			$("#skills").append(formattedSkill);
 		}
@@ -94,7 +94,7 @@ var projects = {
 			var formattedProjectDates = HTMLprojectDates.replace("%data%", projects.projects[i].dates);
 			var formattedProjectDescripton = HTMLprojectDescription.replace("%data%", projects.projects[i].description);
 			$(".project-entry:last").append(formattedProjectTitle, formattedProjectDates, formattedProjectDescripton);
-			for (var a in projects.projects[i].images){
+			for (var a=0; a<projects.projects[i].images.length; a++){
 				var formattedProjectImage = HTMLprojectImage.replace("%data%", projects.projects[i].images[a]);
 				$(".project-entry:last").append(formattedProjectImage);
 			}
