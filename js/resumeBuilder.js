@@ -110,7 +110,7 @@ var education = {
 		"name": "NKSU",
 		"location": "Petropavlovsk, Kazakhstan",
 		"degree": "BLS",
-		"majors": "Foreign Languages",
+		"majors": ["Foreign Languages"],
 		"dates" : 2009,
 		"url": "#"
 	}
@@ -131,8 +131,8 @@ var education = {
 			var formattedDegree = HTMLschoolDegree.replace("%data%", education.schools[i].degree);
 			var formattedSchoolDates = HTMLschoolDates.replace("%data%", education.schools[i].dates);
 			var formattedSchoolLoc = HTMLschoolLocation.replace("%data%", education.schools[i].location);
-			var formattedMajor = HTMLschoolMajor.replace("%data%", education.schools[i].majors);
-			$(".education-entry:last").append(formattedSchoolName + formattedDegree, formattedSchoolDates, formattedSchoolLoc, formattedMajor);
+			var formattedMajor = HTMLschoolMajor.replace("%data%", education.schools[i].majors)
+			$(".education-entry:last").append(formattedSchoolName + formattedDegree, formattedSchoolDates, formattedSchoolLoc, formattedMajor);			
 		}
 
 		$("#education").append(HTMLonlineClasses);
